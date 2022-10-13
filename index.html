@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <!-- * google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+
+
+    <!-- * font awesome -->
+    <script src="https://kit.fontawesome.com/f854723461.js" crossorigin="anonymous"></script>
+
+    <!--* bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- * bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+
+
+    <!-- ? linking css file -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Shoes</title>
+
+</head>
+
+<body>
+    <!-- ! Navigation bar start here -->
+    <nav class="navigation">
+        <ul class="navigation">
+            <li class="brand">Shoe<span class="">s</span></li>
+            <ul class="tags-list">
+                <li class="tag"><a href="#home">Home</a></li>
+                <li class="tag"><a href="#product">Products</a></li>
+                <li class="tag"><a href="#about">About</a></li>
+                <li class="tag"><a href="#review">Reviews</a></li>
+                <li class="tag"><a href="#service">Servises</a></li>
+            </ul>
+            <ul class="icons-list">
+                <li class="icon" id="likes" type="button"><i class="fa-solid fa-heart"><span class="like-count">0</span></i></li>
+                <li class="icon" id="cart" type="button"><i class="fa-solid fa-cart-shopping"><span class="item-count">0</span></i></li>
+                <li class="icon" id="login" href="#login" type="button"><i class="fa-solid fa-user"></i></li>
+            </ul>
+        </ul>
+    </nav>
+    <!-- ? Navigation bar ends here -->
+
+    <section id="home">
+        <div class="row home-row">
+            <div class="col description">
+                <div class="display-1 fw-bolder"><span class="gradient-text cursive-text">NIKE</span></div>
+                <div class="display-4 fw-bold"><span class="gradient-text simple-text">Collection</span></div>
+                <p class="mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sint eaque iure
+                    suscipit, eos beatae
+                    quis totam consectetur provident non similique autem molestiae rerum fuga doloribus ad perferendis
+                    dolore dignissimos quam iste consequatur illum! Cupiditate ipsa provident aliquid necessitatibus ad
+                    accusantium excepturi veritatis asperiores nobis! Qui temporibus facilis quia repellat.
+                </p>
+                <div class="shop-now" type="button" >Shop Now <i class="fa-solid fa-chevron-right" id="motion"></i></div>
+            </div>
+            <div class="col">
+                <img src="image/shoes.png" alt="Shoes" class="brand-shoe">
+            </div>
+
+            <ul class="social-links-vertical">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+
+
+
+    </section>
+    <section id="product">
+        <div class="heading gradient-text">Products</div>
+        <!-- ! Shoes card dec starts here -->
+        <div class="card-deck row">
+
+            <!-- ! Shoes card 1 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon1" data-like = "false"></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes.png" alt="shoe1" id="shoes">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  type = "button" id="shoe-in-cart1">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 2 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon2" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes3.png" alt="shoe1" id="shoe1">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  id ='shoe-in-cart2' type = "button">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 3 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon3" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes4.png" alt="shoe1" id="shoe1">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  id ='shoe-in-cart3' type = "button">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 4 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon4" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes5.png" alt="shoe1" id="shoe1">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  id ='shoe-in-cart4' type = "button">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 5 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon5" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes6.png" alt="shoe1" id="shoe1">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  id ='shoe-in-cart5' type = "button">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 6 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon6" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes7.png" alt="shoe1" id="shoes">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  id ='shoe-in-cart6' type = "button">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 7 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon7" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes1.png" alt="shoe1" id="shoe1">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  id ='shoe-in-cart7' type = "button">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 8 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon8" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes8.png" alt="shoe1" id="shoe1">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false"  id ='shoe-in-cart8' type = "button">Add To Cart</button>
+                </div>
+            </div>
+
+            <!-- ! Shoes card 9 starts here -->
+            <div class="card card-shoe"  style="width: 20rem;">
+                <div class="hover-div">
+                    <span class="hover-icon"><i class="fa-solid fa-heart" id="heart-icon9" data-like = false></i></span><span class="hover-icon"><i
+                            class="fa-solid fa-share"></i></span>
+                </div>
+                <img class="card-img-top zoom" src="image/shoes2.png" alt="shoe1" id="shoe1">
+                <div class="card-body">
+                    <h3><b>NIKE</b></h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk</p>
+                    <h5><b>$129.99</b></h5>
+                    <button class="shop-now cart-button" data-add-in-cart="false" id ='shoe-in-cart9' type = 'button'>Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="about">
+        <div class="heading">Web <span class="gradient-text">ABOUT</span></div>
+        <div class="row">
+            <div class="col col-lg-6 col-sm-12 about-col">
+                <div class="img-blocks">
+                    <div class="red-shoes" type="button" id="red-shoes1"><img src="image/red_shoes1.png" alt=""></div>
+                    <div class="red-shoes" type="button" id="red-shoes2"><img src="image/red_shoes2.png" alt=""></div>
+                    <div class="red-shoes" type="button" id="red-shoes3"><img src="image/red_shoes3.png" alt=""></div>
+                    <div class="red-shoes" type="button" id="red-shoes4"><img src="image/red_shoes4.png" alt=""></div>
+                </div>
+                <div class="main-block"><img src="image/red_shoes1.png" alt=""></div>
+            </div>
+
+            <div class="col col-lg-6 col-sm-12 col-description">
+                <div class="about-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+                    quibusdam saepe magni omnis ipsum voluptates maxime tempora molestias blanditiis, sapiente nobis
+                    deserunt aliquid. Porro expedita maxime incidunt enim eaque? Possimus? Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Unde, sapiente amet. Explicabo, nobis ducimus. Aut, qui magni,
+                    architecto dolore consequatur dolor accusamus ut, molestiae nostrum blanditiis necessitatibus
+                    temporibus modi incidunt.</div>
+
+            </div>
+        </div>
+        <div class="text-center" type="button">
+            <div class="web-button">Shop Now</div>
+        </div>
+    </section>
+    <section id="review">
+        <div class="heading">Coustomer's <span class="gradient-text">Reviews</span></div>
+
+        <!-- ! Review card deck starts here -->
+        <div class="review-deck row">
+
+            <!-- ! Review card 1 starts here -->
+            <div class="col col-lg-3 card-review" style="width: 30rem">
+                <img src="image/girl_dp1.jpg" alt="" class="reviewer-img">
+                <div class="review-name"><span class="fw-bold">Arundhati Roy</span>
+                    <p class="rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
+                            class="fa-regular fa-star"></i></p>
+                </div>
+                <div class="review-comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eos
+                    hic molestias debitis error beatae optio repudiandae distinctio corporis blanditiis, nobis
+                    explicabo. Dolore, beatae recusandae. Necessitatibus ratione ab incidunt nihil.</div>
+            </div>
+
+            <!-- ! Shoes card 2 starts here -->
+            <div class="col col-lg-3 card-review" style="width: 30rem">
+                <img src="image/man_dp2.jpg" alt="" class="reviewer-img">
+                <div class="review-name"><span class="fw-bold">Arundhati Roy</span>
+                    <p class="rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
+                            class="fa-regular fa-star"></i></p>
+                </div>
+                <div class="review-comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eos
+                    hic molestias debitis error beatae optio repudiandae distinctio corporis blanditiis, nobis
+                    explicabo. Dolore, beatae recusandae. Necessitatibus ratione ab incidunt nihil.</div>
+            </div>
+            <!-- ! Shoes card 3 starts here -->
+            <div class="col col-lg-3 card-review" style="width: 30rem">
+                <img src="image/man_dp1.jpg" alt="" class="reviewer-img">
+                <div class="review-name"><span class="fw-bold">Arundhati Roy</span>
+                    <p class="rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
+                            class="fa-regular fa-star"></i></p>
+                </div>
+                <div class="review-comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eos
+                    hic molestias debitis error beatae optio repudiandae distinctio corporis blanditiis, nobis
+                    explicabo. Dolore, beatae recusandae. Necessitatibus ratione ab incidunt nihil.</div>
+            </div>
+            <!-- ! Shoes card 4 starts here -->
+            <div class="col col-lg-3 card-review" style="width: 30rem">
+                <img src="image/gir_dp3.jpg" alt="" class="reviewer-img">
+                <div class="review-name"><span class="fw-bold">Arundhati Roy</span>
+                    <p class="rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
+                            class="fa-regular fa-star"></i></p>
+                </div>
+                <div class="review-comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eos
+                    hic molestias debitis error beatae optio repudiandae distinctio corporis blanditiis, nobis
+                    explicabo. Dolore, beatae recusandae. Necessitatibus ratione ab incidunt nihil.</div>
+            </div>
+            <!-- ! Shoes card 5 starts here -->
+            <div class="col col-lg-3 card-review" style="width: 30rem">
+                <img src="image/gir_dp2.jpg" alt="" class="reviewer-img">
+                <div class="review-name"><span class="fw-bold">Arundhati Roy</span>
+                    <p class="rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
+                            class="fa-regular fa-star"></i></p>
+                </div>
+                <div class="review-comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eos
+                    hic molestias debitis error beatae optio repudiandae distinctio corporis blanditiis, nobis
+                    explicabo. Dolore, beatae recusandae. Necessitatibus ratione ab incidunt nihil.</div>
+            </div>
+
+            <!-- ! Shoes card 6 starts here -->
+            <div class="col col-lg-3 card-review" style="width: 30rem;">
+                <img src="image/man_dp3.jpg" alt="" class="reviewer-img">
+                <div class="review-name"><span class="fw-bold">Alex Jhonson</span>
+                    <p class="rating-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i><i
+                            class="fa-regular fa-star"></i></p>
+                </div>
+                <div class="review-comment">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eos
+                    hic molestias debitis error beatae optio repudiandae distinctio corporis blanditiis, nobis
+                    explicabo. Dolore, beatae recusandae. Necessitatibus ratione ab incidunt nihil.</div>
+            </div>
+        </div>
+
+    </section>
+    <section id="service">
+        <div class="heading">Our <span class="gradient-text">Services</span></div>
+
+        <!-- ! Service row start here -->
+        <div class="row service-row">
+
+            <!-- ! service col 1 start here -->
+            <div class="col services-col">
+                <h3 class="service-icon"><i class="fa-solid fa-truck"></i></h3>
+                <p class="fs-5 fw-bold">Fast Delivery</p>
+                <p class="service-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptas.
+                </p>
+            </div>
+
+            <!-- ! service col 2 start here -->
+            <div class="col services-col">
+                <h3 class="service-icon"><i class="fa-sharp fa-solid fa-rotate-left"></i></h3>
+                <p class="fs-5 fw-bold">10 Day Replacement</p>
+                <p class="service-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptas.
+                </p>
+            </div>
+
+            <!-- ! service col 3 start here -->
+            <div class="col services-col">
+                <h3 class="service-icon"><i class="fa-sharp fa-solid fa-headset"></i></h3>
+                <p class="fs-5 fw-bold">24 X 7 Support</p>
+                <p class="service-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptas.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section id="login">
+        <div class="row login-row">
+            <div class="col col-login-img"><img src="image/logshoes.png" alt="" class="login-img"></div>
+            <div class="col col-login-form">
+                <div class="login-form">
+                    <h2 class="cursive-text fw-bold">Welcome back!</h2>
+                    <label for="username" class="">User Name</label>
+                    <div class="user-input"><i class="fa-solid fa-user"></i>
+                        <input type="text" id="username" name="username" class="username-input" placeholder="Username">
+                    </div>
+
+                    <label for="password">Enter your password</label>
+                    <div class="user-input"><i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" class="password-input" placeholder="Password">
+                    </div>
+
+
+                    <a href="" class="forgot-password">Forgot Password ?</a>
+
+                    <button class="log-in-button">Log In</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="row footer-row">
+            <div class="col"><h3>Contact Us</h3>
+                <p><i class="fa-solid fa-home"></i>Singhana,India</p>
+                <p><i class="fa-solid fa-phone"></i> +91 1234567890</p>
+                <p><i class="fa-solid fa-envelope"></i>ptokoni@gmail.com</p>
+            </div>
+            <div class="col">
+                <h3>Get Help</h3>
+                <p><a href="">FAQ</a></p>
+                <p><a href="">Shopping</a></p>
+                <p><a href="">Payment Option</a></p>
+                <p><a href="">Return Option</a></p>
+            </div>
+            <div class="col">
+                <h3>Our store</h3>
+                <p>India</p>
+                <p>USA</p>
+                <p>UK
+                </p>
+                <p>Australia</p>
+            </div>
+            <div class="col ">
+                <h3>Follow Us</h3>
+                <div class="following-social-icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col"><h3>NewsLetter</h3>
+            <input type="email" id="email" placeholder="Email Id">
+            <label for="email" type="submit" id="emial-submit-btn"> Submit</label>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- * Now for jquery and javascript file there -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <!-- * Add Every javascript file according to its feature -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
