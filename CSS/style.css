@@ -509,4 +509,106 @@ input{
     transform: translate(-50%, -50%);
 }
 
+/* let do media query */
+@media screen and (max-width: 600px) {
+    html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .brand{
+        margin-left: 0;
+        font-weight: 500;
+    }
+    .tags-list{
+        display: none;
+    }
 
+    .social-links-vertical{
+        top: 40%;
+    }
+
+    .home-row{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .brand-shoe{
+        display: none;
+    }
+
+    .description{
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+
+    .card-deck{
+        /* margin: 20px 0; */
+    }
+
+
+    /* about section */
+    .about-col{
+        text-align: center;
+        width: 99vw;
+        padding: 0;
+        /* margin-right: 20px; */
+        height: 370px;
+        /* width: 400px; */
+    }
+    .img-blocks{
+        width: 100%;
+        padding-left: 10px;
+        /* border: 1px solid green; */
+
+    }
+    .red-shoes{
+        display: inline;
+        width: 20%;
+        margin: 7px;
+    }
+
+    .main-block{
+        width: 95%;
+        margin-top: 30px;
+        margin-left: 20px;
+        display: block;
+    }
+
+    .col-description{
+
+    }
+    .about-description{
+        width: 90%;
+        padding: 20px 5px;
+        text-align: left;
+    }
+
+    /* review section */
+    .card-review{
+        /* width: 100vw; */
+        margin: 10px;
+        padding: 10px 5px;
+    }
+
+/* services  */
+    .service-row{
+        padding: 10px 25px;
+    }
+    .services-col{
+        min-width: 320px;
+    }
+
+    /* login section */
+    .col-login-img{
+        display: none;
+    }
+    .login-form{
+        padding:30px;
+        margin-bottom: 50px;
+    }
+}
